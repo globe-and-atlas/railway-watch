@@ -1,31 +1,43 @@
-# Task: railway-watch
+---
+generated_by: "OpenAI Codex (GPT-6; exact variant not exposed)"
+timestamp: "2026-11-06T11:00:00-06:00"
+---
+# Railway implementation
 
-## Objective
+Master brief: keep the clear railway dial; prove geometry with native screenshots. No store publication.
 
-Define the first real milestone for this `workflow-python` project.
+- [x] Native Emery build succeeds.
+- [x] Six palette renders preserve readable hands.
+- [x] Custom colors reach the native renderer.
+- [x] Optional digital footer supports 12-hour time.
+- [x] Optional digital footer supports 24-hour time.
+- [x] Date choices render independently.
+- [x] Battery reflects the battery service.
+- [x] Seconds off uses minute ticks.
+- [x] Clay Save sends settings.
+- [x] Clay Cancel preserves settings.
+- [x] Clay reload restores saved settings.
+- [x] Native comparison image contains Railway.
+- [x] Fresh independent review passes.
 
-## Context
+## Round compatibility — 2026-11-06
+- [x] Emery remains a build target.
+- [x] Chalk is a build target.
+- [x] Gabbro is a build target.
+- [x] The UUID is preserved.
+- [x] Existing settings key mappings are preserved.
+- [x] Native Chalk layout passes visual review.
+- [x] Native Gabbro layout passes visual review.
+- [x] Clean production PBW contains three native binaries.
+- [x] Existing host/settings checks pass.
+- [x] Fresh independent review passes.
+No store publication is authorized by this compatibility request.
 
-- Deploy target: `local-only`
-- Runtime: `python`
-- Loop mode: `data`
-- Knowledge level: `heavy`
-
-## Acceptance Criteria
-
-- [ ] Objective is rewritten from template language into project language
-- [ ] First implementation step is clear
-- [ ] Relevant directive exists in `directives/`
-- [ ] Health check passes for this profile
-
-## Steps
-
-- [ ] Populate README and context
-- [ ] Draft the first workflow directive
-- [ ] Implement the first thin slice
-
-## Progress Log
-
-### YYYY-MM-DD HH:MM — Bootstrap
-- Project scaffold created from `project-template`
-- Next: replace placeholders and define the first real milestone
+## Store round update — 2026-11-06
+- [x] Publish the verified three-platform production update.
+- [x] Preserve the current animated preview.
+- [x] Add native screenshots for Chalk.
+- [x] Add native screenshots for Gabbro.
+- [x] Verify the public download matches the production artifact.
+- [x] Verify public round screenshot pixels.
+- [x] Fresh independent public-proof review passes.

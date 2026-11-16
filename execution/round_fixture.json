@@ -1,0 +1,10 @@
+{
+  "prefix": "RAIL",
+  "flags": {
+    "RAIL_FIXTURE": "1",
+    "RAIL_HOUR": "10",
+    "RAIL_MINUTE": "8",
+    "RAIL_SECOND": "30",
+    "RAIL_BATTERY": "82"
+  }
+}

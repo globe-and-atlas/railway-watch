@@ -1,0 +1,23 @@
+{
+  "name": "Railway",
+  "repo": "railway-watch",
+  "version": "0.1.1",
+  "url": "https://apps.repebble.com/b882652051884d01bfcabfdf",
+  "pbw_exact": true,
+  "native_round_pixels_exact": true,
+  "matched_round_urls": [
+    "https://assets.repebble.com/screenshots/b882652051884d01bfcabfdf/chalk/79c2236d-31f3-4b4a-86fc-2c26e09c816c.gif",
+    "https://assets.repebble.com/screenshots/b882652051884d01bfcabfdf/chalk/c4e30609-afa7-4a7d-a517-bd33fe92820a.gif",
+    "https://assets.repebble.com/screenshots/b882652051884d01bfcabfdf/gabbro/4de00115-70ed-4f7d-b324-62bdd52a9eae.gif",
+    "https://assets.repebble.com/screenshots/b882652051884d01bfcabfdf/gabbro/eedaf8d6-a128-4638-a7c8-5bd3a2b6cb84.gif"
+  ],
+  "existing_gallery_preserved": false,
+  "animated_preview_first": true,
+  "screenshots": [
+    "https://assets.repebble.com/screenshots/b882652051884d01bfcabfdf/emery/f38b7def-f816-4b6f-aa36-792e65349d5b.gif",
+    "https://assets.repebble.com/screenshots/b882652051884d01bfcabfdf/emery/673402ae-9e72-449f-a941-a3b56304afc8.png",
+    "https://assets.repebble.com/screenshots/b882652051884d01bfcabfdf/emery/b8b54054-1f70-4047-8790-70b87243226d.png",
+    "https://assets.repebble.com/screenshots/b882652051884d01bfcabfdf/gabbro/4de00115-70ed-4f7d-b324-62bdd52a9eae.gif",
+    "https://assets.repebble.com/screenshots/b882652051884d01bfcabfdf/chalk/79c2236d-31f3-4b4a-86fc-2c26e09c816c.gif"
+  ]
+}

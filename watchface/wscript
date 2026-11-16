@@ -1,0 +1,45 @@
+import os
+from datetime import date
+
+top = '.'
+out = 'build'
+
+
+def options(ctx):
+    ctx.load('pebble_sdk')
+
+
+def configure(ctx):
+    ctx.load('pebble_sdk')
+
+
+def validate_fixture_date():
+    year = int(os.environ.get('RAIL_YEAR', '2026'))
+    month = int(os.environ.get('RAIL_MONTH', '11'))
+    day = int(os.environ.get('RAIL_DAY', '6'))
+    if not 1900 <= year <= 2099:
+        raise ValueError('RAIL_YEAR must be in 1900..2099')
+    date(year, month, day)
+
+
+def build(ctx):
+    validate_fixture_date()
+    ctx.load('pebble_sdk')
+    binaries = []
+    cached_env = ctx.env
+    for platform in ctx.env.TARGET_PLATFORMS:
+        ctx.env = ctx.all_envs[platform]
+        ctx.set_group(ctx.env.PLATFORM_NAME)
+        defines = []
+        for name, maximum in [('RAIL_FIXTURE', 1), ('RAIL_HOUR', 23), ('RAIL_MINUTE', 59), ('RAIL_SECOND', 59), ('RAIL_BATTERY', 100), ('RAIL_YEAR', 2099), ('RAIL_MONTH', 12), ('RAIL_DAY', 31)]:
+            if name in os.environ:
+                value = int(os.environ[name])
+                if not 0 <= value <= maximum:
+                    raise ValueError('Invalid ' + name)
+                defines.append('{}={}'.format(name, value))
+        app_elf = '{}/pebble-app.elf'.format(ctx.env.BUILD_DIR)
+        ctx.pbl_build(source=ctx.path.ant_glob('src/c/**/*.c'), target=app_elf, bin_type='app', defines=defines)
+        binaries.append({'platform': platform, 'app_elf': app_elf})
+    ctx.env = cached_env
+    ctx.set_group('bundle')
+    ctx.pbl_bundle(binaries=binaries, js=ctx.path.ant_glob('src/pkjs/**/*.js'), js_entry_file='src/pkjs/index.js')
